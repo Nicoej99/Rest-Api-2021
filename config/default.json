@@ -1,0 +1,20 @@
+{
+    "db-connections":{
+        "mongodb":{
+            "host":"cluster0.jylzk.mongodb.net",
+            "user":"rest-api-user",
+            "password":"5zy4MPh5IXcPYd6S",
+            "dbname":"AcademicDB"
+        }
+    },
+
+    "secretkeys": {
+        "cryptojs":"Kpf&j@2]RhN"
+    },
+    "roles":{
+        "student": 1,
+        "teacher": 2
+    },
+    "server-port": 3000
+
+}
