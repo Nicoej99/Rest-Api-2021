@@ -9,7 +9,8 @@
     },
 
     "secretkeys": {
-        "cryptojs":"Kpf&j@2]RhN"
+        "cryptojs":"Kpf&j@2]RhN",
+        "jwt": "ABCdef@2020*"
     },
     "roles":{
         "student": 1,
