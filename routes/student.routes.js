@@ -3,12 +3,12 @@ const controller = require("../controller/logic/student.controller");
 
 
 exports.StudentRoutes = (app) =>{
-    console.log("loading routes of Student !!!");
     app.get("/student",(req, res, next) => {
         controller.getAll(req, res, next);
     });
     
     app.get("/student/bycode/:code",(req, res, next) => {
+        console.log("geting student by code");
         controller.getByCode(req, res, next);
     });
 
