@@ -21,10 +21,11 @@ app.use("*", ipFn);
 app.get("/", ( req, res, next) => {
     res.send("Welcome to academic rest api");
 });
-
+/**
 // token Middleware
 tkFn = require("./middleware/verifyToken")
 app.use(tkFn)
+ */
 
 /** routes  */
 // Student Routes
@@ -54,6 +55,11 @@ facultyRoutes(app);
 // Program Routes
 const programRoutes = require("./routes/program.routes");
 programRoutes(app);
+
+// User Routes
+const userRoutes = require("./routes/user.routes");
+userRoutes(app);
+
 
 app.listen(port, ()=>{
     console.log("server is running...")
